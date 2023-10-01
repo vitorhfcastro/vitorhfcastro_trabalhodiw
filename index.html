@@ -5,36 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BH Turístico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">BH Turístico</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#">BH Turístico</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://prefeitura.pbh.gov.br">Prefeitura de BH</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Mim</a>
-                  </li>
-                </ul>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="https://prefeitura.pbh.gov.br">Prefeitura de BH</a>
+                  <a class="nav-link" href="#autoria">Sobre Mim</a>
+                </div>
               </div>
             </div>
         </nav>
     </header>
 
     <section class="destaque">
-        <h1>Destaque</h1>
-        <hr size="0" width="90%">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <h5>Destaque</h5>
+        <hr size="0" width="100%">
+        <div id="carouselExampleIndicators" class="carousel slide m-5">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,7 +43,7 @@
                 <img src="assets/img/slide-ccbb.jpg" class="d-block w-100" alt="CCBB">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/slide-parque-municipal.jpg" class="d-block w-100" alt="Parque Municipal">
+                <img src="assets/img/slide-parque-municipal.jpg" class="d-block w-100" width="800px" alt="Parque Municipal">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -63,81 +58,97 @@
     </section>
 
     <section class="mapa">
-        <h1>Mapa</h1>
-        <hr size="0" width="90%">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59795757699!2d-44.04662274608247!3d-19.90253583914758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1694258462357!5m2!1spt-BR!2sbr/@-19.9744816,-44.0837816,11.42z" class="embed-responsive w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h5>Mapa</h5>
+        <hr size="0" width="100%">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59795757699!2d-44.04662274608247!3d-19.90253583914758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1694258462357!5m2!1spt-BR!2sbr/@-19.9744816,-44.0837816,11.42z" class="embed-responsive w-100" height="500px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section class="lista-albuns">
-        <h1>Lista de Álbuns</h1>
-        <hr size="0" width="90%">
-        <div class="container fluid">
-            <div class="row">
-                <div class="card col-sm-6 col-md-3">
+        <h5>Lista de Álbuns</h5>
+        <hr size="0" width="100%">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col">
+                <div class="card p-0 m-2">
+                    <img src="assets/img/mineirao.jpg" class="card-img-top" alt="Mineirão">
                     <div class="card-body">
-                        <img src="assets/img/mineirao.jpg" class="card-img" alt="Mineirão">
                         <h5 class="card-title">Mineirão</h5>
                         <p class="card-text">Estádio de futebol</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-2">
+                    <img src="assets/img/praca-da-liberdade.jpg" class="card-img-top" alt="Praça da Liberdade">
                     <div class="card-body">
-                        <img src="assets/img/praca-da-liberdade.jpg" class="card-img" alt="Praça da Liberdade">
                         <h5 class="card-title">Praça da Liberdade</h5>
                         <p class="card-text">Complexo paisagistico e arquitetônico</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-2">
+                    <img src="assets/img/palacio-das-artes.jpg" class="card-img-top" alt="Palácio das Artes">
                     <div class="card-body">
-                        <img src="assets/img/palacio-das-artes.jpg" class="card-img" alt="Palácio das Artes">
                         <h5 class="card-title">Palácio das Artes</h5>
                         <p class="card-text">Maior complexo cultural de MG</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-2">
+                    <img src="assets/img/lagoa-da-pampulha.jpg" class="card-img-top" alt="Lagoa da Pampulha">
                     <div class="card-body">
-                        <img src="assets/img/lagoa-da-pampulha.jpg" class="card-img" alt="Lagoa da Pampulha">
                         <h5 class="card-title">Lagoa da Pampulha</h5>
                         <p class="card-text">Lagoa situada na Pampulha</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="card col-sm-6 col-md-3">
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col">
+                <div class="card p-0 m-3">
+                    <img src="assets/img/mercado-central.jpg" class="card-img-top" alt="Mercado Central">
                     <div class="card-body">
-                        <img src="assets/img/mercado-central.jpg" class="card-img" alt="Mercado Central">
                         <h5 class="card-title"></h5>
                         <p class="card-text">Mercado localizado no Centro de BH</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-3">
+                    <img src="assets/img/parque-das-mangabeiras.jpg" class="card-img-top" alt="Parque das Mangabeiras">
                     <div class="card-body">
-                        <img src="assets/img/parque-das-mangabeiras.jpg" class="card-img" alt="Parque das Mangabeiras">
                         <h5 class="card-title">Parque das Mangabeiras</h5>
                         <p class="card-text">Maior área verde de BH</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-3">
+                    <img src="assets/img/parque-municipal.jpg" class="card-img-top" alt="Parque Municipal Américo Renné Giannetti">
                     <div class="card-body">
-                        <img src="assets/img/parque-municipal.jpg" class="card-img" alt="Parque Municipal Américo Renné Giannetti">
                         <h5 class="card-title">Parque Municipal Américo Renné Giannetti</h5>
                         <p class="card-text">Principal parque de BH</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 col-md-3">
-                    <div class="card-body">
-                        <img src="assets/img/ccbb.jpg" class="card-img" alt="Centro Cultural Banco do Brasil">
+                </div>
+                <div class="col">
+                <div class="card p-0 m-3">
+                    <img src="assets/img/ccbb.jpg" class="card-img-top" alt="Centro Cultural Banco do Brasil">
+                    <div class="card-body">    
                         <h5 class="card-title">Centro Cultural Banco do Brasil</h5>
                         <p class="card-text">Organização cultural do Banco do Brasil</p>
                         <a href="#" class="btn btn-primary">Ver álbum</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -145,22 +156,27 @@
 
     <footer>
         <section class="sobre-mim">
-            <h1>Créditos</h1>
-            <hr size="0" width="90%">
-            <div class="" id="sobre">
-                <h2>Sobre</h2>
+            <h5>Créditos</h5>
+            <hr size="0" width="100%">
+            <div class="row">
+            <div class="col-8" id="sobre">
+                <h6 class="text-primary">Sobre</h6>
                 <p>Meu nome é André Leôncio Jales, tenho 18 anos, e sou estudante de Ciência da Computação na instituição de ensino PUC Minas. Esse site mostra alguns dos principais pontos turísticos de Belo Horizonte.</p>
             </div>
-            <div class="" id="autoria">
-                <h2>Autoria</h2>
-                <img src="assets/img/me.jfif" class="float-start" width="100px" height="100px">
-                <p>Aluno: André Leôncio Jales</p>
-                <p>Curso: Ciência da Computação</p>
-                <p>Turma: Tarde</p>
+            <div class="col-4">
+                <div id="autoria">
+                    <h6 class="text-primary">Autoria</h6>
+                    <img src="assets/img/me.jfif" class="float-start me-3 rounded-circle" width="100px" height="100px">
+                    <p><b>Aluno: </b>André Leôncio Jales</p>
+                    <p><b>Curso: </b>Ciência da Computação</p>
+                    <p><b>Turma: </b>Tarde</p>
+                </div>
+                <div id="redes-sociais">
+                    <h6 class="d-inline text-primary m-1">Redes Sociais:</h6>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-le%C3%B4ncio-jales/"><img src="assets/img/linkedin.png" class="d-inline m-1" width="30px" height="30px"></a>
+                    <a href="https://github.com/andre-jales"><img src="assets/img/github.png" class="d-inline m-1" width="30px" height="30px"></a>
+                </div>
             </div>
-            <div class="" id="redes-sociais">
-                <h2>Redes Sociais:</h2>
-                <a href="https://www.linkedin.com/in/andr%C3%A9-le%C3%B4ncio-jales/"><img src="assets/img/linkedin.png" width="50px" height="50px"></a>
             </div>
         </section>
     </footer>
