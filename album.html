@@ -16,7 +16,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">BH Turístico</a>
+          <a class="navbar-brand" href="index.html">BH Turístico</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,20 +30,140 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
               <a class="nav-link" href="https://prefeitura.pbh.gov.br"
                 >Prefeitura de BH</a
               >
-              <a class="nav-link" href="#autoria">Sobre Mim</a>
+              <a class="nav-link" href="index.html#autoria">Sobre Mim</a>
             </div>
           </div>
         </div>
       </nav>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"
-      ></script>
     </header>
+
+    <section class="album">
+      <h5>Álbum Lagoa da Pampulha</h5>
+      <hr size="0" width="100%" />
+      <div class="row">
+        <div class="col-4" id="sobre">
+          <img
+            src="assets/img/lagoa-da-pampulha.jpg"
+            alt="Capa do álbum"
+            width="100%"
+          />
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <h6 class="text-primary">Descrição</h6>
+            <p>
+              A Lagoa da Pampulha é uma lagoa situada na região da Pampulha no
+              município de Belo Horizonte no Estado de Minas Gerais. Faz parte
+              de um complexo de monumentos arquitetônicos concebidos por Oscar
+              Niemeyer, com projetos estruturais do engenheiro Joaquim Cardozo,
+              que foram construídos durante a gestão de Juscelino Kubitschek à
+              frente da prefeitura de Belo Horizonte.
+            </p>
+          </div>
+          <div class="row">
+            <div id="localizacao" class="col">
+              <h6 class="text-primary">Localização</h6>
+              <p>
+                Av. Otacílio Negrão de Lima, s/n - São Luiz, Belo Horizonte -
+                MG, 31365-450
+              </p>
+            </div>
+            <div id="redes-sociais" class="col">
+              <h6 class="d-inline text-primary">Data de registro</h6>
+              <p>30/09/2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lista-albuns mt-3">
+      <h5>Lista de Álbuns</h5>
+      <hr size="0" width="100%" />
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-4">
+          <div class="col">
+            <div class="card p-0 m-2">
+              <img
+                src="assets/img/casa-do-baile.jpg"
+                class="card-img-top"
+                alt="Casa do Baile"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa do Baile</h5>
+                <p class="card-text">
+                  Foi projetada por Oscar Niemeyer e faz parte do Conjunto
+                  Moderno da Pampulha.
+                </p>
+                <a href="#" class="btn btn-primary">Ver item</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-0 m-2">
+              <img
+                src="assets/img/casa-kubitschek.jpg"
+                class="card-img-top"
+                alt="Casa Kubitschek"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa Kubitschek</h5>
+                <p class="card-text">
+                  Museu-casa que antigamente serviu de residência de fim de
+                  semana do ex-prefeito Juscelino Kubitschek.
+                </p>
+                <a href="#" class="btn btn-primary">Ver item</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-0 m-2">
+              <img
+                src="assets/img/igreja-da-pampulha.jpg"
+                class="card-img-top"
+                alt="Igreja da Pampulha - São Francisco de Assis"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Igreja da Pampulha - São Francisco de Assis
+                </h5>
+                <p class="card-text">
+                  Conhecida como Igrejinha da Pampulha, foi projetada por Oscar
+                  Niemeyer.
+                </p>
+                <a href="#" class="btn btn-primary">Ver item</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card p-0 m-2">
+              <img
+                src="assets/img/museu-de-arte-da-pampulha.jpg"
+                class="card-img-top"
+                alt="Museu de Arte da Pampulha"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Museu de Arte da Pampulha</h5>
+                <p class="card-text">
+                  Inaugurado em dezembro de 1957, tem suas ações museológicas
+                  voltadas para a arte moderna e contemporânea brasileira.
+                </p>
+                <a href="#" class="btn btn-primary">Ver item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
