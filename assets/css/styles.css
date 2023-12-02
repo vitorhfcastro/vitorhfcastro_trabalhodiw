@@ -2,3 +2,25 @@ section {
     align-items: center;
     margin: 0px 5%;
 }
+
+.heart-checkbox {
+    display: none;
+}
+  
+.heart-img {
+    width: 20px;
+    height: 20px;
+}
+  
+@media only screen and (max-width: 767px) {
+    .car-dest {
+        width: 100%;
+    }
+}
+  
+
+@media only screen and (min-width: 768px) {
+    .car-dest {
+        width: 50%;
+    }
+}
